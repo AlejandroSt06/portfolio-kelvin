@@ -8,7 +8,7 @@ import { UilInstagram, UilLinkedin, UilWhatsapp  } from '@iconscout/react-unicon
 
             <div className="col-10 col-sm-8 col-lg-5 mt-lg-5">
               <img
-                src="../public/avatar-kelvin.jpeg"
+                src="/avatar-kelvin.jpeg"
                 className="home-image d-block mx-lg-auto img-fluid"
                 alt="Bootstrap Themes"
                 width="700"

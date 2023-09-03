@@ -331,6 +331,7 @@ a {
 .button {
   border: none;
   max-width: 190px;
+
 }
 .button a {
   max-width: 190px;
@@ -458,7 +459,27 @@ a {
   max-height: 300px;
   object-fit: cover;
 }
+.experience{
+  display: flex;
+  gap: 20px;
+}
+.experience span{
 
+  font-size:  34px;
+  font-weight: 600;
+}
+.experience div{
+  padding: 10px;
+  max-width: 100px;
+  /* border: 2px solid var(--primary-color); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.experience-par{
+  text-align: center;
+}
 /*==================== SKILLS ====================*/
 
 
