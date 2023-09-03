@@ -87,6 +87,19 @@
         --smaller-font-size: .813rem;
     }
 }
+::-webkit-scrollbar {
+  width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  background: var(--back-header);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: 3px solid var(--secondary-color);
+  background: var(--secondary-color);
+  }
 
 /*========== Variables Dark theme ==========*/
 
@@ -461,6 +474,7 @@ a {
 }
 .experience{
   display: flex;
+  justify-content: start;
   gap: 20px;
 }
 .experience span{
@@ -469,7 +483,7 @@ a {
   font-weight: 600;
 }
 .experience div{
-  padding: 10px;
+  
   max-width: 100px;
   /* border: 2px solid var(--primary-color); */
   display: flex;

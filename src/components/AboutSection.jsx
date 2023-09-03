@@ -36,7 +36,7 @@ function AboutSection() {
                 <h2 className='text-center'>About Me</h2>
                 <p className='text-center'>Here you will find more information about me and what I do</p>
             </div>
-            <div className='container'>
+            <div className='ps-3'>
                 <div className="row flex-lg-row- align-items-center g-5 py-lg-3 mt-lg-5 justify-content-center">
 
                     <div className="col-10 col-sm-8 col-lg-6">
