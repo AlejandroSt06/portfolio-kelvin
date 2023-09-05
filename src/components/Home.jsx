@@ -3,10 +3,10 @@ import { UilInstagram, UilLinkedin, UilWhatsapp  } from '@iconscout/react-unicon
 
     function HeroSection() {
       return (
-        <div className="container col-xxl-8 px-2 py-5" id="home">
+        <div className="container col-xxl-8 px-2 py-5 " id="home">
           <div className="home-row row flex-lg-row-reverse justify-content-center align-items-center mt-lg-5 py-lg-5 mt-lg-5 w-100 g-5">
 
-            <div className="col-10 col-sm-8 col-lg-5 mt-lg-5">
+            <div className="col-10 col-sm-8 col-lg-5 mt-lg-5 py-lg-5">
               <img
                 src="/avatar-kelvin.jpeg"
                 className="home-image d-block mx-lg-auto img-fluid"

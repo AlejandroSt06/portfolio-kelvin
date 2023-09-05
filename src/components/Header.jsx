@@ -1,11 +1,11 @@
-import { UilMoon, UilApps, UilEstate, UilTimes,UilSun, UilUser, UilFileInfoAlt, UilBriefcaseAlt, UilScenery ,UilMessage } from '@iconscout/react-unicons'
+import { UilMoon, UilApps, UilEstate, UilTimes, UilSun, UilUser, UilFileInfoAlt, UilBriefcaseAlt, UilScenery, UilMessage } from '@iconscout/react-unicons'
 import { useState } from 'react';
 
 function Header() {
 
     const [isMenuOpen, setMenu] = useState(false)
 
-    const [isDark,setDark] = useState(true)
+    const [isDark, setDark] = useState(true)
 
     function openMenu() {
         setMenu(true)
@@ -19,20 +19,22 @@ function Header() {
     const [coloreVariabile, setColoreVariabile] = useState('#ff0000'); // Valore iniziale
 
     const cambiaColore = () => {
-      // Genera un nuovo colore casuale (puoi personalizzare questa parte)
-      const nuovoColoreSfondo = isDark ? "#d7dbdf" : "#161823";
-      const nuovoColoreTesto = isDark ? "#161823" : "#d7dbdf";
-      const nuovoColoreSecondary = isDark ? "#161823" : "#f2cb78";
-      const nuovoTestoButton = isDark ? "#d7dbdf" : "#f2cb78";
-      setColoreVariabile(nuovoColoreSfondo);
+        // Genera un nuovo colore casuale (puoi personalizzare questa parte)
+        const nuovoColoreSfondo = isDark ? "#d7dbdf" : "#161823";
+        const nuovoColoreTesto = isDark ? "#161823" : "#d7dbdf";
+        const nuovoColoreSecondary = isDark ? "#161823" : "#f2cb78";
+        const nuovoTestoButton = isDark ? "#d7dbdf" : "#f2cb78";
+        const bgSecondary = isDark ? "white" : "#191d28"
+        setColoreVariabile(nuovoColoreSfondo);
         setDark(!isDark)
-      // Applica il nuovo colore alla variabile CSS
-      document.documentElement.style.setProperty('--bg-color', nuovoColoreSfondo);
-      document.documentElement.style.setProperty('--primary-color', nuovoColoreTesto);
-      document.documentElement.style.setProperty('--secondary-color', nuovoColoreSecondary);
-      document.documentElement.style.setProperty('--text-button',nuovoTestoButton);
+        // Applica il nuovo colore alla variabile CSS
+        document.documentElement.style.setProperty('--bg-color', nuovoColoreSfondo);
+        document.documentElement.style.setProperty('--bg-secondary-color', bgSecondary);
+        document.documentElement.style.setProperty('--primary-color', nuovoColoreTesto);
+        document.documentElement.style.setProperty('--secondary-color', nuovoColoreSecondary);
+        document.documentElement.style.setProperty('--text-button', nuovoTestoButton);
     };
-    
+
 
 
 
@@ -52,50 +54,50 @@ function Header() {
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contatto</a></li>
                     <button className='nav-button' id="moon" onClick={cambiaColore}>
-                    {isDark ? <UilMoon /> : <UilSun/>}
-                    
+                        {isDark ? <UilMoon /> : <UilSun />}
+
                     </button>
                 </ul>
 
-  
+
 
             </nav>
 
- 
+
             <nav className=" nav-control d-flex d-lg-none">
                 <button className='nav-button' id="moon" onClick={cambiaColore}><UilMoon /></button>
                 <button className='nav-button' id="Apps" onClick={openMenu}><UilApps /></button>
             </nav>
             <nav className={`nav-menu nav-control d-lg-none ${menuClass}`}>
-                <a href = "#" className='d-flex flex-column align-items-center'>
+                <a href="#" className='d-flex flex-column align-items-center'>
                     <button><UilEstate /></button>
                     <h5 className='text-center'>Home</h5>
 
                 </a>
 
-                <a href = "#" className='d-flex flex-column align-items-center'>
+                <a href="#about" className='d-flex flex-column align-items-center'>
                     <button><UilUser /></button>
                     <h5 className='text-center'>About</h5>
 
                 </a>
-                <a href = "#" className='d-flex flex-column align-items-center'>
+                <a href="#" className='d-flex flex-column align-items-center'>
                     <button><UilFileInfoAlt /></button>
                     <h5 className='text-center'>Skills</h5>
 
                 </a>
 
-                <a href = "#"  className='d-flex flex-column align-items-center'>
+                <a href="#" className='d-flex flex-column align-items-center'>
                     <button><UilBriefcaseAlt /></button>
                     <h5 className='text-center'>Services</h5>
 
                 </a>
 
-                <a href = "#" className='d-flex flex-column align-items-center'>
+                <a href="#" className='d-flex flex-column align-items-center'>
                     <button><UilScenery /></button>
                     <h5 className='text-center'>Portfolio</h5>
 
                 </a>
-                <a href = "#" className='d-flex flex-column align-items-center'>
+                <a href="#" className='d-flex flex-column align-items-center'>
                     <button><UilMessage /></button>
                     <h5 className='text-center'>Contact</h5>
 

@@ -4,6 +4,7 @@
   --primary-color: #d7dbdf;
   --secondary-color: #f2cb78;
   --text-button: #f2cb78;
+  --bg-btn:#191d28;
   font-family: 'Bricolage Grotesque', sans-serif;
   font-family: 'Fredoka', sans-serif;
   font-family: 'Koulen', cursive;
@@ -261,6 +262,9 @@ height: 40px;
 
 
 /*==================== HOME ====================*/
+#home{
+  /* background-image: url("../public/header.svg"); */
+}
 .home-social{
   display: flex;
   flex-direction: column;
@@ -344,7 +348,7 @@ a {
 .button {
   border: none;
   max-width: 190px;
-
+border-radius:15px ;
 }
 .button a {
   max-width: 190px;
@@ -357,8 +361,9 @@ a {
   border: 1px solid var(--secondary-color);
   background-color: var(--secondary-color);
   overflow: hidden;
-
+  border-radius: 15px;
   z-index: 1;
+  padding: 20px 0;
 }
 
 .button, .button__icon, .button__text {
@@ -412,7 +417,7 @@ a {
 .send-button {
   font-family: inherit;
   font-size: 20px;
-  background: var(--bg-secondary-color);
+  background: var(--bg-btn);
   color: var(--text-button);
   padding: 0.7em 1em;
   padding-left: 0.9em;
@@ -466,6 +471,10 @@ a {
 
 
 /*==================== ABOUT ====================*/
+#about{
+
+  background-color: var(--bg-secondary-color);
+}
 .about-image{
 
   border-radius: 20px;
@@ -501,11 +510,46 @@ a {
 
 
 /*==================== SERVICES ====================*/
+.services-section{
+  display: flex;
+  justify-content: center;
+}
+.service-card{
+  display: flex;
+  padding: 20px 10px;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+  width: 18rem;
+  background-color: var(--bg-btn);
+  color: var(--primary-color);
+  height: 400px;
 
+}
+.service-card div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.service-card div .card-icon svg{
+width: 50px;
+height: 50px;
+}
+ .primary-button{
 
+  background-color: var(--bg-secondary-color);
+}
+.service-btn svg{
+transition: all 0.5s ease-in-out;
+}
+.service-btn:hover svg{
+  transform: translateX(10px);
+}
 /* Active Modal */
 
-
+.modal{
+  display: flex;
+}
 /*==================== PORTFOLIO ====================*/
 
 
